@@ -1,0 +1,74 @@
+body {
+	background: black;                    /* Fondo negro */
+	height: 100vh;                        /* Ocupa toda la pantalla */
+	display: flex;                        /* Centra la postal */
+	justify-content: center;              /* horizontalmente */
+	align-items: center;                  /* verticalmente */
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+.postcard {
+	background: white;
+	width: 600px;        /* un poco más ancha como pide el ejercicio */
+	height: 350px;
+	border-radius: 15px;  /* esquinas redondeadas */
+	box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+	display: flex;
+	flex-direction: column;   /* para que header, body y footer vayan uno debajo del otro */
+}
+
+.postcard-header {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	background: #f4f4f4;
+	gap: 15px;            /* espacio entre logo y título */
+}
+
+.postcard-header img {
+	width: 60px;
+	height: 60px;
+}
+
+.postcard-header h1 {
+	margin: 0;
+	font-size: 28px;
+	flex: 1;              /* ocupa todo el espacio disponible */
+}
+
+.postcard-body {
+	flex: 1;              /* ocupa todo el espacio que sobra */
+	display: flex;
+	padding: 0 20px;
+	gap: 20px;
+}
+
+.body-left, .body-right {
+	flex: 1;
+}
+
+.body-right {
+	color: gray;
+}
+
+.postcard-footer {
+	text-align: center;
+	padding: 20px;
+	background: #f4f4f4;
+}
+
+.postcard-footer button {
+	background-color: #333;
+	color: white;
+	border: none;
+	padding: 12px 30px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Pequeño extra opcional para que el botón cambie al pasar el ratón */
+.postcard-footer button:hover {
+	background-color: #555;
+}
